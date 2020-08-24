@@ -13,17 +13,17 @@
 	<nav class="navbar">
 		<ul>
 			<li>
-				<div class="dropdown">
+				<div class="navItem">
 					<a href="index.php">Hjem</a>
 				</div>
 			</li>
 			<li>
-				<div class="dropdown">
+				<div class="navItem">
 					<a href="">FAQ</a>
 				</div>
 			</li>
 			<li>
-				<div class="dropdown">
+				<div class="navItem">
 					<a href="">Utfordring</a>
 				</div>
 			</li>

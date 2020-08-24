@@ -15,6 +15,14 @@
     border: 1px solid var(--nomad-orange);
 }
 
+.navItem {
+    background-color: var(--orange-tan);
+    color: var(--catskill-white);
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid var(--nomad-orange);
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
