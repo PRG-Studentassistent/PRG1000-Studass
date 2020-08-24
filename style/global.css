@@ -21,6 +21,12 @@
     padding: 16px;
     font-size: 16px;
     border: 1px solid var(--nomad-orange);
+    margin: 16px;
+}
+
+.navItem a {
+    text-decoration: none;
+    padding: 16px;
 }
 
 .dropdown {
