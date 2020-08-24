@@ -9,6 +9,8 @@
 
 .headerMain {
     background-color: var(--regent-blue);
+    max-width: 100vh;
+    max-height: fit-content;
 }
 
 .dropbtn {
