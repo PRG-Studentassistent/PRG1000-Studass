@@ -17,7 +17,6 @@
 
 .navItem {
     background-color: var(--orange-tan);
-    color: var(--catskill-white);
     padding: 16px;
     font-size: 16px;
     border: 1px solid var(--nomad-orange);
@@ -31,6 +30,7 @@
 
 .navItem a:active a:visited a:focus {
     text-decoration: none;
+    color: var(--catskill-white);
 }
 
 .navItem div:hover a:hover {
