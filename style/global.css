@@ -13,12 +13,13 @@ html {
 }
 
 body {
-
+    margin: 0;
 }
 
 header {
     min-width: 100%;
     min-height: 100px;
+    background-color: var(--regent-blue);
 }
 
 .dropbtn {
