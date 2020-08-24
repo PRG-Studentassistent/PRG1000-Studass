@@ -58,3 +58,7 @@ li a {
     text-decoration: none;
     padding: 16px;
 }
+
+.name {
+    max-width: 100px;
+}
