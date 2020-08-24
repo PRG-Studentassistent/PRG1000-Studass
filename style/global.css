@@ -61,4 +61,15 @@ li a {
 
 .name {
     max-width: 100px;
+    margin: 0;
+    float: left;
+}
+
+.branding {
+    max-width: fit-content;
+    margin: 0;
+}
+
+.navbar {
+    float: right;
 }
