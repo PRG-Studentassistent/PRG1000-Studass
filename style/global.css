@@ -12,6 +12,15 @@ html {
     min-width: 100%;
 }
 
+body {
+
+}
+
+header {
+    min-width: 100%;
+    min-height: 100px;
+}
+
 .dropbtn {
     background-color: var(--orange-tan);
     color: var(--catskill-white);
