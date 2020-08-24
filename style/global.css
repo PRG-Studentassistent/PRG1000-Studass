@@ -65,7 +65,7 @@ a:-webkit-any-link {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: var(--catskill-white);
 }
 
 .dropdown:hover .dropdown-content {
