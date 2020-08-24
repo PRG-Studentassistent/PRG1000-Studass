@@ -18,7 +18,8 @@ body {
 
 header {
     min-width: 100%;
-    min-height: 100px;
+    min-height: 116px;
+    max-height: 116px;
     background-color: var(--regent-blue);
 }
 
