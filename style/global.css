@@ -7,13 +7,6 @@
     --gothic-blue: #6D929B
 }
 
-.headerMain {
-    background-color: var(--regent-blue);
-    max-width: 100vh;
-    max-height: fit-content;
-    min-height: fit-content;
-}
-
 .dropbtn {
     background-color: var(--orange-tan);
     color: var(--catskill-white);
