@@ -29,11 +29,11 @@
     padding: 16px;
 }
 
-.navItem a:active a:visited {
+.navItem a:active a:visited a:focus {
     text-decoration: none;
 }
 
-.navItem a:hover {
+.navItem div:hover a:hover {
     background-color: var(--gothic-blue);
 }
 
