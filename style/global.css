@@ -29,6 +29,14 @@
     padding: 16px;
 }
 
+.navItem a:active a:visited {
+    text-decoration: none;
+}
+
+.navItem a:hover {
+    background-color: var(--gothic-blue);
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
