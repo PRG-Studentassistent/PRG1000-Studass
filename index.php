@@ -2,7 +2,7 @@
 <html lang="no" dir="ltr">
 <head>
 	<link rel="stylesheet" href="style/global.css">
-	<base href="/var/www/html/">
+	<base href="/">
 	<title>PRG1000 | Studentassistent</title>
 </head>
 <body>
