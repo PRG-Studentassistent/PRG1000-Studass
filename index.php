@@ -14,7 +14,7 @@
 		<ul>
 			<li>
 				<div>
-					<a href="">Hjem</a>
+					<a href="index.php">Hjem</a>
 				</div>
 			</li>
 			<li>
