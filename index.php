@@ -6,7 +6,7 @@
 	<title>PRG1000 | Studentassistent</title>
 </head>
 <body>
-<header>
+<header class="headerMain">
 	<div class="branding">
 		<h3 class="name">PRG1000 Hjem</h3>
 	</div>

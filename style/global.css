@@ -7,6 +7,10 @@
     --gothic-blue: #6D929B
 }
 
+.headerMain {
+    background-color: var(--regent-blue);
+}
+
 .dropbtn {
     background-color: var(--orange-tan);
     color: var(--catskill-white);
@@ -18,7 +22,6 @@
 .navbar {
     float: right;
     margin-right: 75px;
-    background-color: var(--blue-green);
 }
 
 .navItem {
