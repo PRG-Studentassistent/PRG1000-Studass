@@ -33,8 +33,9 @@
     color: var(--catskill-white);
 }
 
-.navItem div:hover a:hover {
-    background-color: var(--gothic-blue);
+a:-webkit-any-link {
+    text-decoration: none;
+    color: var(--catskill-white);
 }
 
 .dropdown {
