@@ -6,3 +6,4 @@
 
 <?php
     echo "hello world";
+    ?>
