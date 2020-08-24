@@ -99,7 +99,7 @@ a:-webkit-any-link {
 li {
     list-style: none;
     float: left;
-    margin: 8px;
+    margin-bottom: 8px;
 }
 
 li a {
