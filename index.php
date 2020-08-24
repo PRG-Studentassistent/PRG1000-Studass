@@ -3,6 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="style/global.css">
+	<base href="/var/www/html/">
 	<title>PRG1000 | Studentassistent</title>
 </head>
 <body>
