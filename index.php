@@ -11,13 +11,33 @@
 		<div class="branding">
 			<h3 class="name">PRG1000 Hjem</h3>
 		</div>
-		
 		<nav>
 			<ul>
-				<li><a href="">Hjem</a></li>
-				<li><a href="">Spørsmål</a></li>
-				<li><a href="">FAQ</a></li>
-				<li><a href="">Om oss</a></li>
+				<li>
+					<div>
+						<a href="">Hjem</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="">FAQ</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="">Utfordring</a>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Kapitler</button>
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</nav>
 	</section>
