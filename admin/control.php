@@ -19,6 +19,7 @@ $del = mysqli_fetch_array($sqlQuery);
     $userRole = $del["userRole"];
     
 
+    
     $newURL = "<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/access/".$userRole."/dashboard.php'/>";
     
 
