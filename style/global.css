@@ -28,9 +28,13 @@ header {
 .dropbtn {
     background-color: var(--orange-tan);
     color: var(--catskill-white);
-    padding: 2vh;
-    font-size: 16px;
+    /* padding: 2vh; */
+    padding-bottom: 1vh;
+    font-size: 2empx;
     border: 1px solid var(--nomad-orange);
+    border: none;
+    height: 6vh;
+    padding: none;
 }
 
 .navbar {
@@ -39,7 +43,7 @@ header {
     height: 10vh;
 }
 ul{
-    width: 40vw;
+    width: 50vw;
     margin: 0;
 }
 li{
@@ -52,11 +56,14 @@ li{
 h3.alt{
     margin: 0;
     padding: 0;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 1.5vh;
 }
 .navItem {
     background-color: var(--orange-tan);
     width: 12vw;
-    height: 4vh;
+    height: 6vh;
 }
 
 .navItem:hover {
@@ -75,12 +82,14 @@ h3.alt{
 a:-webkit-any-link {
     text-decoration: none;
     color: var(--catskill-white);
+    padding: 0;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-    margin: 0.5vw;
+    margin: 0;
+    background-color: var (--orange-tan);
 }
 
 .dropdown-content {
@@ -108,13 +117,14 @@ a:-webkit-any-link {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: var(--gothic-blue);
+  
 }
 
 li {
     list-style: none;
     float: left;
     padding-bottom: 0;
+    height: 6vh;
 }
 
 li a {
