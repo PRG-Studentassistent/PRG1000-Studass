@@ -3,13 +3,12 @@ session_start();
 @$connectedUser=$_SESSION["userName"];
 
 if(!$connectedUser ){
-    /*print("<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/access/login.php'/>");*/
-    print($connectedUser);
+    print("<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/access/login.php'/>");
 }
 else{
 include("..\access\database.php");
 
-$sql = "SELECT * FROM users WHERE userName='$connectedUser';";
+$sql = "SELECT * FROM users WHERE userId='$connectedUser';";
 $sqlQuery = mysqli_query($db,$sql) or die ("Kan ikke hente data fra databasen (#100)");
 $del = mysqli_fetch_array($sqlQuery);
 
