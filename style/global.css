@@ -175,3 +175,11 @@ li a {
   .welcomeMsg{
     width: 98vw;
   }
+  .lastQuestions{
+      width: 48vw;
+      min-height: 45vh;
+  }
+  .newestPost{
+      width: 48vw;
+      min-height: 35vh;
+  }
