@@ -6,7 +6,7 @@ if(!$connectedUser ){
 	print("<meta http-equiv='refresh' content='0;URL=http://www.prg1000.studentassistent.no/access/login.php'/>");
 }
 else{
-include("..\access\database.php")
+include("..\access\database.php");
 
 $sql = "SELECT * FROM users WHERE userName='$connectedUser';";
 $sqlQuery = mysqli_query($db,$sql) or die ("Kan ikke hente data fra databasen (#100)");
@@ -30,7 +30,7 @@ $del = mysqli_fetch_array($sqlQuery);
 ?>
 <html>
     <head>
-        <title> <?php $userFirstName $userLastName?> </title>
+        <title> <?php print("$userFirstName $userLastName"); ?> </title>
         <link rel="stylesheet" href="../style/stylesheet.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
