@@ -53,5 +53,36 @@
 	</div>
 </div>
 
+<ul class="firstfooter">
+	<li class="footerDesc"><h5>Fine ressurser</h5>
+	<li class="footerDesc2"><h5>Om oss</h5></li>
+</ul>
+<figure class="footerFigure">
+
+<section class="footerSectionOne">
+
+<ul class="footerNavOne">
+<li><a href="usn.no"><h3 class="footerNav">USN</h3></a></li>
+<li><a href="https://www.usn.no/om-usn/it-tjenester/canvas/"><h3 class="footerNav">Canvas</h3></a></li>
+<li><a href="https://www.usn.no/om-usn/kvalitetssystemet/si-ifra/"><h3 class="footerNav">Si i fra</h3></a></li>
+<li><a href="https://www.usn.no/aktuelt/"><h3 class="footerNav">Aktuelle nyheter</h3></a></li>
+<li><a href="https://www.usn.no/om-usn/it-tjenester/"><h3 class="footerNav">IT hjelp</h3></a></li>
+</ul>
+</section>
+
+<section class="footerSectionTwo">
+
+<ul class="footerNavTwo">
+<li><a href="om.php"><h3 class="footerNav">Om oss</h3></a></li>
+<li><a href="hjelp.php"><h3 class="footerNav">Hjelp</h3></a></li>
+<li><a href="nyheter.php"><h3 class="footerNav">Endringslogg</h3></a></li>
+<li><a href="tilbakemelding.php"><h3 class="footerNav">tilbakemelding</h3></a></li>
+<li><a href="soking.php"><h3 class="footerNav">Hvordan søker jeg?</h3></a></li>
+</ul>
+</section>
+
+</figure>
+
+
 </body>
 </html>

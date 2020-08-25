@@ -14,7 +14,7 @@ html {
 
 body {
     margin: 0;
-
+    overflow-x: hidden;
 }
 
 header {
@@ -167,16 +167,17 @@ li a {
   padding: 0.5vw;
 }
 .grid-container > div {
-    background-color: #B7AFA3;
+    background-color: #d4e6e3;
     text-align: center;
-    font-size: 30px;
   }
   .welcomeMsg{
     width: 99vw;
     height: 25vh;
   }
   .welcomeMsg p{
-    font-size: 3em;
+    font-size: 2em;
+    margin: 0;
+    margin-top: 1vh;
   }
 
   .lastQuestions{
@@ -184,10 +185,119 @@ li a {
       height: 50vh;
       overflow-y: auto;
       overflow: scroll;
+      overflow-x: hidden;
   }
   .newestPost{
       width: 49vw;
       height: 50vh;
       overflow-y: auto;
       overflow: scroll;
+      overflow-x: hidden;
   }
+ul.firstfooter{
+    width: 100vw;
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;    
+}
+li.footerDesc{
+    width: 50vw;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--orange-tan);
+    display: inline-block;
+    white-space: nowrap;
+}
+li.footerDesc h5{
+text-align: center;
+}
+li.footerDesc2{
+    width: 50vw;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--regent-blue);
+    display: inline-block;
+    white-space: nowrap;
+}
+li.footerDesc2 h5{
+    text-align: center;
+    }
+
+    figure.footerFigure{
+        margin: 0;
+        width: 100vw;
+        min-height: 40vh;
+     }
+     section.footerSectionOne{
+         width: 40vw;
+         margin-left: 5vw;
+         float: left;
+         /*
+         border-left-style: solid;
+         border-right-style: solid;
+         border-left-width: 0.1vw;
+         border-right-width: 0.1vw;*/
+     }
+     h3.desc{
+         font-size: 1.5em;
+         text-align: center;
+         border-bottom-style: solid;
+         border-bottom-width: 0.1vw;
+         margin: 0;
+         padding: 0;
+         margin-top: 1vh;
+     }
+     ul.footerNavOne{
+         margin: 0;
+         padding: 0;
+         list-style: none;
+         display: block;
+         white-space: break-spaces;
+     }
+    ul.footerNavOne li{
+        border-bottom-style: solid;
+        margin: 0;
+        text-align: center;
+        height: 4vh;
+        display: block;
+        white-space: break-spaces;
+        width: 40vw;
+    }
+    ul.footerNavOne li h3{
+        margin: 0;
+        height: 3vh;
+        padding-top: 1vh;
+        color: black;
+        display: block;
+        white-space: break-spaces;
+    }
+    
+     section.footerSectionTwo{
+        width: 40vw;
+        margin-right: 5vw; 
+        float:right;
+     }
+    ul.footerNavTwo{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    ul.footerNavTwo li{
+       border-bottom-style: solid;
+       margin: 0;
+       text-align: center;
+       height: 4vh;
+       width: 40vw;
+       display: block;
+       white-space: break-spaces;
+    }
+    ul.footerNavTwo li h3{
+       margin: 0;
+       height: 3vh;
+       padding-top: 1vh;
+       color: black;
+    }
