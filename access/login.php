@@ -58,18 +58,18 @@
                     $userRole = $xRows["userRole"];
 
                     switch ($userRole) {
-                        case "student":
-
-                            @$_SESSION["userName"] = $logInUserName;
-
-                            print("<meta http-equiv='refresh' content='0;URL=http://opheimpi.zapto.org/www/sda/reko/users/customer/dashboard.php'/>");
-                            break;
-
                         case "admin":
 
                             @$_SESSION["userName"] = $logInUserName;
 
-                            print("<meta http-equiv='refresh' content='0;URL=http://opheimpi.zapto.org/www/sda/reko/users/admin/dashboard.php'/>");
+                            print("<meta http-equiv='refresh' content='0;URL=http://www.prg1000.studentassistent.no/admin/dashboard.php'/>");
+                            break;
+
+                        case "student":
+
+                            @$_SESSION["userName"] = $logInUserName;
+
+                            print("<meta http-equiv='refresh' content='0;URL=http://www.prg1000.studentassistent.no/student/dashboard.php'/>");
                             break;
                     }
                 }
