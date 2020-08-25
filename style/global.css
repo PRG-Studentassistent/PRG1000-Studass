@@ -126,13 +126,13 @@ li a {
 .newestPost { grid-area: posts; }
 
 
-.grid-container {
+.container {
   display: grid;
   grid-template-areas:
    ' welcomeMsg welcomeMsg welcomeMsg welcomeMsg welcomeMsg welcomeMsg'
     'lastQuestions lastQuestions lastQuestions newestPost newestPost newestPost'
     'lastQuestions lastQuestions lastQuestions newestPost newestPost newestPost';
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color:black;
   padding: 10px;
 }
