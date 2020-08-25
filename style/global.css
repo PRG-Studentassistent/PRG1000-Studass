@@ -195,7 +195,7 @@ li a {
       overflow-x: hidden;
   }
   footer.brown{
-      float: left;
+    display: inline-block;
       width: 50vw;
       margin: 0;
       padding: 0;
@@ -203,7 +203,6 @@ li a {
       background-color: var(--orange-tan);
   }
   footer.blue{
-   float: right;
    width: 50vw;
    margin: 0;
    padding: 0;
@@ -214,6 +213,6 @@ li a {
       margin: 0;
       padding: 0;
       text-align: center;
-      font-size: 2em;
+      font-size: 1.5em;
       
   }
