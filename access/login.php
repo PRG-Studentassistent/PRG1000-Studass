@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Log in page</title>
     <link rel="stylesheet" href="../style/stylesheet.css">
-    <link rel="stylesheet" media="screen and (max-width:1250px)" href="/www/sda/reko/Mobile.css">
+    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen and (max-width:1250px)"
@@ -39,7 +39,7 @@
                 $logInControl = control($logInUserName, $logInPassword);
 
                 if (!$logInControl) {
-                    print("<br>Ingen treff på epost/brukernavn eller passord!");
+                    print("<br>Ingen treff på brukernavn eller passord!");
                 } else {
 
                     $servername = "92.220.179.219";
