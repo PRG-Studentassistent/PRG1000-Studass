@@ -129,9 +129,9 @@ li a {
 .grid-container {
   display: grid;
   grid-template-areas:
-   ' welcomeMsg welcomeMsg welcomeMsg welcomeMsg welcomeMsg welcomeMsg'
-    'lastQuestions lastQuestions lastQuestions newestPost newestPost newestPost'
-    'lastQuestions lastQuestions lastQuestions newestPost newestPost newestPost';
+   ' welcome welcome welcome welcome welcome welcome'
+    ' questions questions posts posts posts'
+    'questions questions questions posts posts posts';
   grid-gap: 10px;
   background-color:white;
   padding: 10px;
