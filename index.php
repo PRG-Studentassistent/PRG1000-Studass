@@ -41,7 +41,14 @@
 	</nav>
 </header>
 
-div.
+<div class="container">
+	<div class="welcomeMsg">
+	</div>
+	<div class="lastQuestions">
+	</div>
+	<div class="newestPost">
+	</div>
+</div>
 
 </body>
 </html>

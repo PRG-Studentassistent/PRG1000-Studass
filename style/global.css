@@ -119,3 +119,20 @@ li a {
     margin: 0;
 }
 
+/*Body*/
+
+.welcomeMsg { grid-area: welcome; }
+.lastQuestions { grid-area: questions; }
+.newestPost { grid-area: posts; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+   ' welcomeMsg welcomeMsg welcomeMsg welcomeMsg welcomeMsg welcomeMsg'
+    'lastQuestions lastQuestions lastQuestions newestPost newestPost newestPost'
+    'lastQuestions lastQuestions lastQuestions newestPost newestPost newestPost';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
