@@ -210,3 +210,10 @@ li a {
    height: 10vh;
    background-color: var(--regent-blue);   
   }
+  footer.blue h3{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 2em;
+      
+  }
