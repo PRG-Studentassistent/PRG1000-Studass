@@ -43,10 +43,13 @@
 
 <div class="container">
 	<div class="welcomeMsg">
+		<p>Velkommen melding og introduksjons til siden her!</p>
 	</div>
 	<div class="lastQuestions">
+		<p>5 siste spørsmplene kommer her</p>
 	</div>
 	<div class="newestPost">
+		<p>5 siste oppdatering fra temaer kommer her</p>
 	</div>
 </div>
 
