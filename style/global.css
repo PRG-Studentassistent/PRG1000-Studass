@@ -45,6 +45,7 @@ ul{
 li{
     width: 12vw;
     height: 6vh;
+    margin: 0;
 }
 h3.alt{
     margin: 0;
@@ -55,7 +56,6 @@ h3.alt{
     padding: 2vh;
     font-size: 16px;
     border: 1px solid var(--nomad-orange);
-    margin: 0.5vw;
     
 }
 
