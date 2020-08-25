@@ -62,14 +62,14 @@
 
                             @$_SESSION["userName"] = $logInUserName;
 
-                            print("<meta http-equiv='refresh' content='0;URL=http://www.prg1000.studentassistent.no/admin/dashboard.php'/>");
+                            print("<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/admin/dashboard.php'/>");
                             break;
 
                         case "student":
 
                             @$_SESSION["userName"] = $logInUserName;
 
-                            print("<meta http-equiv='refresh' content='0;URL=http://www.prg1000.studentassistent.no/student/dashboard.php'/>");
+                            print("<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/student/dashboard.php'/>");
                             break;
                     }
                 }
