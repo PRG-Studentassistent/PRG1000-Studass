@@ -164,12 +164,11 @@ li a {
     'questions questions questions posts posts posts';
   grid-gap: 1vw;
   background-color:white;
-  padding: 1vw;
+  padding: 0.5vw;
 }
 .grid-container > div {
     background-color: #B7AFA3;
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
   }
   .welcomeMsg{
