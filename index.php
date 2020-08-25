@@ -53,5 +53,9 @@
 	</div>
 </div>
 
+<footer class=brown></footer>
+<footer class=blue>
+<h5>Eid av RekoGroup</h5>
+</footer>
 </body>
 </html>
