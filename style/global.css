@@ -162,7 +162,7 @@ li a {
    ' welcome welcome welcome welcome welcome welcome'
     ' questions questions questions posts posts posts'
     'questions questions questions posts posts posts';
-  grid-gap: 10px;
+  grid-gap: 1vw;
   background-color:white;
   padding: 10px;
 }
@@ -171,4 +171,5 @@ li a {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+    width: 48vw;
   }
