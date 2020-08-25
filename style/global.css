@@ -164,7 +164,7 @@ li a {
     'questions questions questions posts posts posts';
   grid-gap: 1vw;
   background-color:white;
-  padding: 10px;
+  padding: 1vw;
 }
 .grid-container > div {
     background-color: #B7AFA3;
@@ -175,11 +175,12 @@ li a {
   .welcomeMsg{
     width: 98vw;
   }
+
   .lastQuestions{
-      width: 48vw;
+      width: 49vw;
       min-height: 45vh;
   }
   .newestPost{
-      width: 48vw;
+      width: 49vw;
       min-height: 35vh;
   }
