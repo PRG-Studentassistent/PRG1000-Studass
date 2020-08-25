@@ -171,5 +171,7 @@ li a {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-    width: 48vw;
+  }
+  .welcomeMsg{
+    width: 98vw;
   }
