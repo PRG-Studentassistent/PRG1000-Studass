@@ -34,6 +34,7 @@ header {
     border: 1px solid var(--nomad-orange);
     border: none;
     height: 6vh;
+    width: 12vw;
     padding: none;
 }
 
