@@ -176,6 +176,8 @@ li a {
   }
   .welcomeMsg p{
     font-size: 2em;
+    margin: 0;
+    margin-top: 1vh;
   }
 
   .lastQuestions{
@@ -183,10 +185,12 @@ li a {
       height: 50vh;
       overflow-y: auto;
       overflow: scroll;
+      overflow-x: hidden;
   }
   .newestPost{
       width: 49vw;
       height: 50vh;
       overflow-y: auto;
       overflow: scroll;
+      overflow-x: hidden;
   }
