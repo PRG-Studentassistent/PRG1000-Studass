@@ -45,7 +45,7 @@ ul{
 li{
     width: 12vw;
     height: 6vh;
-    margin: 0;
+    margin: 0px;
 }
 h3.alt{
     margin: 0;
@@ -116,7 +116,6 @@ li {
     list-style: none;
     float: left;
     padding-bottom: 8px;
-    margin:0.5vw;
 }
 
 li a {
