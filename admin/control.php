@@ -3,7 +3,8 @@ session_start();
 @$connectedUser=$_SESSION["userName"];
 
 if(!$connectedUser ){
-	print("<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/access/login.php'/>");
+    /*print("<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/access/login.php'/>");*/
+    print($connectedUser);
 }
 else{
 include("..\access\database.php");
@@ -19,7 +20,7 @@ $del = mysqli_fetch_array($sqlQuery);
     $userRole = $del["userRole"];
     
 
-    
+
     $newURL = "<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/access/".$userRole."/dashboard.php'/>";
     
 
