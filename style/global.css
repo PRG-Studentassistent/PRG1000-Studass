@@ -34,13 +34,21 @@ header {
 }
 
 .navbar {
- 
     float: right;
     margin-right: 0.5vw;
-    max-width:70vw;
-
+    height: 10vh;
 }
-
+ul{
+    width: 40vw;
+}
+li{
+    width: 12vw;
+    height: 6vh;
+}
+h3.alt{
+    margin: 0;
+    padding: 0;
+}
 .navItem {
     background-color: var(--orange-tan);
     padding: 2vh;

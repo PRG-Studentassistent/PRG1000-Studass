@@ -14,22 +14,22 @@
 		<ul>
 			<li>
 				<div class="navItem">
-					<a href="index.php">Hjem</a>
+					<a href="index.php"><h3 class="alt">Hjem</h3></a>
 				</div>
 			</li>
 			<li>
 				<div class="navItem">
-					<a href="">FAQ</a>
+					<a href=""><h3 class="alt">FAQ</h3></a>
 				</div>
 			</li>
 			<li>
 				<div class="navItem">
-					<a href="">Utfordring</a>
+					<a href=""><h3 class="alt">Utfordring</h3></a>
 				</div>
 			</li>
 			<li>
 				<div class="dropdown">
-					<button class="dropbtn">Kapitler</button>
+					<button class="dropbtn"><h3 class="alt">Kapitler</h3></button>
 					<div class="dropdown-content">
 						<a href="#">Link 1</a>
 						<a href="#">Link 2</a>
