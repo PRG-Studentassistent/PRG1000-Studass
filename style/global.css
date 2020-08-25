@@ -228,7 +228,6 @@ li.footerDesc2 h5{
     }
 
     figure.footerFigure{
-        background-color: #efefef;
         margin: 0;
         width: 100vw;
         min-height: 40vh;
@@ -256,17 +255,25 @@ li.footerDesc2 h5{
          margin: 0;
          padding: 0;
          list-style: none;
+         display: block;
+         white-space: break-spaces;
      }
     ul.footerNavOne li{
         border-bottom-style: solid;
         margin: 0;
         text-align: center;
         height: 4vh;
+        display: block;
+        white-space: break-spaces;
+        width: 40vw;
     }
     ul.footerNavOne li h3{
         margin: 0;
         height: 3vh;
         padding-top: 1vh;
+        color: black;
+        display: block;
+        white-space: break-spaces;
     }
     
      section.footerSectionTwo{
@@ -284,9 +291,13 @@ li.footerDesc2 h5{
        margin: 0;
        text-align: center;
        height: 4vh;
+       width: 40vw;
+       display: block;
+       white-space: break-spaces;
     }
     ul.footerNavTwo li h3{
        margin: 0;
        height: 3vh;
        padding-top: 1vh;
+       color: black;
     }
