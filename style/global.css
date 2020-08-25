@@ -194,25 +194,23 @@ li a {
       overflow: scroll;
       overflow-x: hidden;
   }
-  footer.brown{
-    display: inline-block;
-      width: 100vw;
-      margin: 0;
-      padding: 0;
-      height: 10vh;
-      background-color: var(--orange-tan);
-  }
-  footer.blue{
-   width: 50vw;
-   margin: 0;
-   padding: 0;
-   height: 10vh;
-   background-color: var(--regent-blue);   
-  }
-  footer.blue h5{
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      font-size: 1.5em;
-      
-  }
+ul.firstfooter{
+    width: 100vw;
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+}
+li.footerDesc{
+    width: 50vw;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--orange-tan);
+}
+li.footerDesc2{
+    width: 50vw;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--regent-blue);
+}

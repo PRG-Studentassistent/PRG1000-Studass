@@ -53,12 +53,11 @@
 	</div>
 </div>
 
-<footer class=brown>
-	<h5>Fine ressurser</h5>
-<footer class=blue>
-<h5>Oss</h5>
-</footer>
-</footer>
+<ul.firstfooter>
+	<li class="footerDesc"><h5>Fine ressurser</h5>
+	<li class="footerDesc2"><h5>Om oss</h5></li>
+</ul>
+
 
 </body>
 </html>
