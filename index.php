@@ -60,7 +60,7 @@
 <figure class="footerFigure">
 
 <section class="footerSectionOne">
-<h3 class="desc">Universitet ressurser</h3>
+
 <ul class="footerNavOne">
 <li><a href="usn.no"><h3 class="footerNav">USN</h3></a></li>
 <li><a href="https://www.usn.no/om-usn/it-tjenester/canvas/"><h3 class="footerNav">Canvas</h3></a></li>
@@ -71,7 +71,7 @@
 </section>
 
 <section class="footerSectionTwo">
-<h3 class="desc">Sidens ressurser</h3>
+
 <ul class="footerNavTwo">
 <li><a href="om.php"><h3 class="footerNav">Om oss</h3></a></li>
 <li><a href="hjelp.php"><h3 class="footerNav">Hjelp</h3></a></li>
