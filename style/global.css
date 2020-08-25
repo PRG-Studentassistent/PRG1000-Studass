@@ -206,6 +206,7 @@ li.footerDesc{
     margin: 0;
     padding: 0;
     background-color: var(--orange-tan);
+    display: inline-block;
 }
 li.footerDesc2{
     width: 50vw;
@@ -213,4 +214,5 @@ li.footerDesc2{
     margin: 0;
     padding: 0;
     background-color: var(--regent-blue);
+    display: inline-block;
 }
