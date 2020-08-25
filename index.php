@@ -53,9 +53,12 @@
 	</div>
 </div>
 
-<footer class=brown></footer>
+<footer class=brown>
+	<h5>Fine ressurser</h5>
 <footer class=blue>
-<h5>Eid av RekoGroup</h5>
+<h5>Oss</h5>
 </footer>
+</footer>
+
 </body>
 </html>
