@@ -41,7 +41,7 @@
 	</nav>
 </header>
 
-<div class="container">
+<div class="grid-container">
 	<div class="welcomeMsg">
 		<p>Velkommen melding og introduksjons til siden her!</p>
 	</div>
