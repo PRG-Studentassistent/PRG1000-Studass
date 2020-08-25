@@ -41,13 +41,21 @@
                 if (!$logInControl) {
                     print("<br>Ingen treff på epost/brukernavn eller passord!");
                 } else {
-                    ##TODO fix database
-                    $sql = "SELECT * FROM users WHERE userName='$logInUserName' or email='$logInUserName';";
+
+                    $servername = "92.220.179.219";
+                    $username = "Hans";
+                    $password = "23011998";
+                    $dbname = "prg1000";
+
+                    $db = mysqli_connect($servername, $username, $password, $dbname);
+                    if (!$db) {
+                        die("Connection failed: " . mysqli_connect_error());
+                    }
+
+                    $sql = "SELECT * FROM users WHERE userId='$logInUserName';";
                     $sqlQuery = mysqli_query($db, $sql) or die("Ikke mulig &aring; hente data fra databasen (#300)");
                     $xRows = mysqli_fetch_array($sqlQuery);
-                    $userRole = $xRows["role"];
-                    $newURL = "http://opheimpi.zapto.org/www/sda/reko/users/";
-                    $newFile = "/dashboard.php'";
+                    $userRole = $xRows["userRole"];
 
                     switch ($userRole) {
                         case "student":
@@ -63,9 +71,6 @@
 
                             print("<meta http-equiv='refresh' content='0;URL=http://opheimpi.zapto.org/www/sda/reko/users/admin/dashboard.php'/>");
                             break;
-
-
-
                     }
                 }
             }

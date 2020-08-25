@@ -1,67 +1,39 @@
 <?php
 
-function control($logInUserName,$logInPassword){
-    include("./database.php");
-    $result=true;
+function control($logInUserName, $logInPassword)
+{
+    ##TODO Make this in file
+    $servername = "92.220.179.219:3306";
+    $username = "Hans";
+    $password = "23011998";
+    $dbname = "prg1000";
 
-
-    if(!$logInUserName || !$logInPassword){
-        $result=false;
+    $db = mysqli_connect($servername, $username, $password, $dbname);
+    if (!$db) {
+        die("Connection failed: " . mysqli_connect_error());
     }
-    else{
-
-        ##TODO Fiks database error
-    $sql="SELECT * FROM users WHERE userName='$logInUserName' or email='$logInUserName';";
-    $sqlQuery=mysqli_query($db,$sql) or die("Ikke mulig &aring; hente data fra databasen (#300)");
-
-    $xRows=mysqli_fetch_array($sqlQuery);
-    $regUserName=$xRows["userName"];
-    $regEmail=$xRows["email"];
-    $regPassword=$xRows["password"];
-    $status = $xRows['status'];
-    $check = false;
-
-    
-
-    $checkPassword = password_verify($logInPassword,$regPassword);
-    if($regUserName != $logInUserName || $regEmail != $logInUserName && $checkPassword == false){
-        
-        return false;
-    }
-    if(!$status){
-        return false;
-    }
-    else{
-        return true;
-    }
-}
-
-
-}
-function emailUsernameExist($userName_Email){
-    include("./database.php");
 
     $result = true;
-    if(!$userName_Email){
-        $result=false;
-    }
-    else{
-        ##TODO fix more sql
-    $sql="SELECT * FROM users WHERE userName='$userName_Email' or email='$userName_Email';";
-    $sqlQuery=mysqli_query($db,$sql) or die("Ikke mulig &aring; hente data fra databasen (#300)");
 
-    $rows = mysqli_num_rows($sqlQuery);
-    }
 
-    
-    if($rows <= 0){
+    if (!$logInUserName || !$logInPassword) {
         $result = false;
-    }
-    else{
-        $result = true;
+    } else {
+        $sql = "SELECT * FROM users WHERE userId='$logInUserName';";
+        $sqlQuery = mysqli_query($db, $sql) or die("Ikke mulig &aring; hente data fra databasen (#300)");
+
+        $xRows = mysqli_fetch_array($sqlQuery);
+        $regUserName = $xRows["userId"];
+        $regPassword = $xRows["userPassword"];
+
+        ##TODO this needs fixing, redo the password hasing, db does not store hash.
+        $checkPassword = true;
+        if ($regUserName != $logInUserName && $checkPassword == false) {
+            return false;
+        } else {
+            $result = true;
+        }
     }
     return $result;
-
 }
-
 ?>
