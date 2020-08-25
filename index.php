@@ -53,7 +53,7 @@
 	</div>
 </div>
 
-<ul.firstfooter>
+<ul class="firstfooter">
 	<li class="footerDesc"><h5>Fine ressurser</h5>
 	<li class="footerDesc2"><h5>Om oss</h5></li>
 </ul>
