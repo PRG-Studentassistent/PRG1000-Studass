@@ -199,6 +199,7 @@ ul.firstfooter{
     height: 10vh;
     padding: 0;
     margin: 0;
+    width: 100vw;
 }
 li.footerDesc{
     width: 50vw;
@@ -207,6 +208,10 @@ li.footerDesc{
     padding: 0;
     background-color: var(--orange-tan);
     display: inline-block;
+    white-space: nowrap;
+}
+li.footerDesc h5{
+text-align: center;
 }
 li.footerDesc2{
     width: 50vw;
@@ -215,4 +220,8 @@ li.footerDesc2{
     padding: 0;
     background-color: var(--regent-blue);
     display: inline-block;
+    white-space: nowrap;
 }
+li.footerDesc2 h5{
+    text-align: center;
+    }
