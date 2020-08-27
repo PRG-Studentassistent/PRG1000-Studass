@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -24,6 +28,8 @@
 
             <?php
             include("login_function/loginFunction.php");
+			include("..\access\database.php");
+
             if (isset($_GET['msg'])) {
                 $msg = $_GET['msg'];
                 if ($msg == "mail") {
@@ -42,16 +48,6 @@
                     print("<br>Ingen treff på brukernavn eller passord!");
                 } else {
 
-                    $servername = "92.220.179.219";
-                    $username = "Hans";
-                    $password = "23011998";
-                    $dbname = "prg1000";
-
-                    $db = mysqli_connect($servername, $username, $password, $dbname);
-                    if (!$db) {
-                        die("Connection failed: " . mysqli_connect_error());
-                    }
-
                     $sql = "SELECT * FROM users WHERE userId='$logInUserName';";
                     $sqlQuery = mysqli_query($db, $sql) or die("Ikke mulig &aring; hente data fra databasen (#300)");
                     $xRows = mysqli_fetch_array($sqlQuery);
@@ -62,14 +58,14 @@
 
                             @$_SESSION["userName"] = $logInUserName;
 
-                            print("<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/admin/dashboard.php'/>");
+                            print("<meta http-equiv='refresh' content='0;URL=../admin/dashboard.php'/>");
                             break;
 
                         case "student":
 
                             @$_SESSION["userName"] = $logInUserName;
 
-                            print("<meta http-equiv='refresh' content='0;URL=http://prg1000.studentassistent.no/student/dashboard.php'/>");
+                            print("<meta http-equiv='refresh' content='0;URL=../student/dashboard.php'/>");
                             break;
                     }
                 }
