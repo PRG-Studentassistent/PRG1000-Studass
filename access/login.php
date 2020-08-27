@@ -42,7 +42,7 @@ session_start();
                 $logInUserName = $_POST["userName-Email"];
                 $logInPassword = $_POST["password"];
 
-                $logInControl = control($logInUserName, $logInPassword);
+                $logInControl = control($logInUserName, $logInPassword, $db);
 
                 if (!$logInControl) {
                     print("<br>Ingen treff på brukernavn eller passord!");
