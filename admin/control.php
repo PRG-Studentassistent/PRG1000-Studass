@@ -6,7 +6,7 @@ if(!$connectedUser ){
     print("<meta http-equiv='refresh' content='0;URL=../access/login.php'/>");
 }
 else{
-include("..\access\database.php");
+include("../access/database.php");
 
 $sql = "SELECT * FROM users WHERE userId='$connectedUser';";
 $sqlQuery = mysqli_query($db,$sql) or die ("Kan ikke hente data fra databasen (#100)");
