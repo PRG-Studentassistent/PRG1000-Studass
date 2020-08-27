@@ -49,7 +49,7 @@ session_start();
                 } else {
 
                     $sql = "SELECT * FROM users WHERE userId='$logInUserName';";
-                    $sqlQuery = mysqli_query($db, $sql) or die("Ikke mulig &aring; hente data fra databasen (#300)");
+                    $sqlQuery = mysqli_query($db, $sql) or die("Ikke mulig &aring; hente data fra databasen (#300)" . mysqli_error($db));
                     $xRows = mysqli_fetch_array($sqlQuery);
                     $userRole = $xRows["userRole"];
 
