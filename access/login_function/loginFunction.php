@@ -9,7 +9,8 @@ function control($logInUserName, $logInPassword, $db)
         $result = false;
     } else {
         $sql = "SELECT * FROM users WHERE userId='$logInUserName';";
-        $sqlQuery = mysqli_query($db, $sql) or die("Ikke mulig &aring; hente data fra databasen (#3000)");
+        $sqlQuery = mysqli_query($db, $sql) or die("Ikke mulig &aring; hente data fra databasen (#3000)" . mysqli_error($db));
+        echo ($logInUserName);
 
         $xRows = mysqli_fetch_array($sqlQuery);
         $regUserName = $xRows["userId"];
