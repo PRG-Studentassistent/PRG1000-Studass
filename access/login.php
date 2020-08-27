@@ -30,7 +30,7 @@ ini_set('display_errors', 1);
 
             <?php
             include("login_function/loginFunction.php");
-			include("..\access\database.php");
+			include("../access/database.php");
 
             if (isset($_GET['msg'])) {
                 $msg = $_GET['msg'];
