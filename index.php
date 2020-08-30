@@ -46,7 +46,27 @@
 		<p>Velkommen melding og introduksjons til siden her!</p>
 	</div>
 	<div class="lastQuestions">
-		<p>5 siste spørsmplene kommer her</p>
+		<?php
+		include("./access/database.php");
+
+		$sql = "SELECT questionText, c.categoryType, questionAnswer, answerUser FROM prg1000.questions JOIN category c on questions.questionCategory = c.cateqoryId WHERE questionStatus='1' ORDER BY questionId DESC LIMIT 5;";
+		$result = mysqli_query($db, $sql);
+		$rows = mysqli_num_rows($result);
+
+		print "<table>";
+
+		for ($i = 0; $i <= $rows - 1; $i++) {
+			$fetch = mysqli_fetch_array($result);
+
+			$questionText = $fetch["questionText"];
+			$questionCategory = $fetch["categoryType"];
+			$questionAnswer = $fetch["questionAnswer"];
+			$answerUser = $fetch["answerUser"];
+			print "<tr><td>$questionText | $questionCategory | $questionAnswer | $answerUser</td></tr> <br><br>";
+		}
+
+		print "</table>";
+		?>
 	</div>
 	<div class="newestPost">
 		<p>5 siste oppdatering fra temaer kommer her</p>
