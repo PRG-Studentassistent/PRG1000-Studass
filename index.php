@@ -64,7 +64,8 @@
 			$questionCategory = $fetch["categoryType"];
 			$questionAnswer = $fetch["questionAnswer"];
 			$answerUser = $fetch["answerUser"];
-			print "<tr><td id='myTd$questionId' class='myTd' onclick='tdclick($questionId)'> $questionText | $questionCategory | $questionAnswer | $answerUser</td></tr>";
+			print "<tr><td id='myTd$questionId' class='myTd' onclick='tdclick($questionId)'> $questionText | $questionCategory | $questionAnswer | $answerUser</td></tr>
+					<tr><td id='hiddenTd$questionId' class='hiddenTd'>$questionAnswer</td></tr>";
 		}
 
 		print "</table>";

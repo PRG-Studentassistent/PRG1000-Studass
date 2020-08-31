@@ -1,7 +1,7 @@
 function tdclick(id) {
-	if (document.getElementById("myTd" + id).style.visibility === 'hidden') {
-		document.getElementById("myTd" + id).style.visibility = 'visible';
+	if (document.getElementById("hiddenTd" + id).style.visibility === 'hidden') {
+		document.getElementById("hiddenTd" + id).style.visibility = 'visible';
 	} else {
-		document.getElementById("myTd" + id).style.visibility = 'hidden';
+		document.getElementById("hiddenTd" + id).style.visibility = 'hidden';
 	}
 }
