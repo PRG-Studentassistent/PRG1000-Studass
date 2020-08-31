@@ -65,7 +65,7 @@
 			$questionAnswer = $fetch["questionAnswer"];
 			$answerUser = $fetch["answerUser"];
 			print "<tr><td id='myTd$questionId' class='myTd' onclick='tdclick($questionId)'> $questionText | $questionCategory | $questionAnswer | $answerUser</td></tr>
-					<tr><td id='hiddenTd$questionId' class='hiddenTd'>$questionAnswer</td></tr>";
+					<tr><td id='hiddenTd$questionId' class='hiddenTd' style='visibility: hidden;'>$questionAnswer</td></tr>";
 		}
 
 		print "</table>";

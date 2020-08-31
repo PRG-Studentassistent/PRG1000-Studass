@@ -300,10 +300,6 @@ li.footerDesc2 h5{
        color: black;
     }
 
-    .hiddenTd {
-        visibility: hidden;
-    }
-
     .myTd {
         width: 48vw;
         padding: 2vh;
