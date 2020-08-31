@@ -2,7 +2,7 @@
 <html lang="no" dir="ltr">
 <head>
 	<link rel="stylesheet" href="style/global.css">
-	<base href="/">
+
 	<title>PRG1000 | Studentassistent</title>
 	<script src="functions/table.js"></script>
 </head>
@@ -65,7 +65,7 @@
 			$questionAnswer = $fetch["questionAnswer"];
 			$answerUser = $fetch["answerUser"];
 			print "<tr><td id='myTd$questionId' class='myTd' onclick='tdclick($questionId)'> $questionText | $questionCategory | $questionAnswer | $answerUser</td></tr>
-					<tr><td id='hiddenTd$questionId' class='hiddenTd' style='display: table-row;'>$questionAnswer</td></tr>";
+					<tr><td id='hiddenTd$questionId' class='hiddenTd' style='display: none ;'>Svar: $questionAnswer</td></tr>";
 		}
 
 		print "</table>";
@@ -85,7 +85,7 @@
 <section class="footerSectionOne">
 
 <ul class="footerNavOne">
-<li><a href="usn.no"><h3 class="footerNav">USN</h3></a></li>
+<li><a href="https://usn.no"><h3 class="footerNav">USN</h3></a></li>
 <li><a href="https://www.usn.no/om-usn/it-tjenester/canvas/"><h3 class="footerNav">Canvas</h3></a></li>
 <li><a href="https://www.usn.no/om-usn/kvalitetssystemet/si-ifra/"><h3 class="footerNav">Si i fra</h3></a></li>
 <li><a href="https://www.usn.no/aktuelt/"><h3 class="footerNav">Aktuelle nyheter</h3></a></li>

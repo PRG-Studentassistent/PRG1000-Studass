@@ -4,6 +4,7 @@
     --blue-green: #c1dad6;
     --catskill-white: #f5fafa;
     --regent-blue: #ACD1E9;
+    --15dark-regent-blue: #86ABC3;
     --gothic-blue: #6D929B;
 }
 
@@ -301,10 +302,23 @@ li.footerDesc2 h5{
     }
 
     .myTd {
-        width: 48vw;
+        width: 44vw;
         padding: 2vh;
-        border: 2px solid var(--nomad-orange);
         font-size: 2.5vh;
+        background-color: var(--orange-tan);
+
+    }
+
+    .myTd:hover {
+        color: var(--gothic-blue);
+
+    }
+
+    .hiddenTd {
+        width: 44vw;
+        font-size: 2.5vh;
+        background-color: var(--15dark-regent-blue);
+        margin-bottom: 1.5vh;
 
     }
 
