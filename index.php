@@ -50,7 +50,7 @@
 		<?php
 		include("./access/database.php");
 
-		$sql = "SELECT questionText, c.categoryType, questionAnswer, answerUser FROM prg1000.questions JOIN category c on questions.questionCategory = c.cateqoryId WHERE questionStatus='1' ORDER BY questionId DESC LIMIT 5;";
+		$sql = "SELECT questionId, questionText, c.categoryType, questionAnswer, answerUser FROM prg1000.questions JOIN category c on questions.questionCategory = c.cateqoryId WHERE questionStatus='1' ORDER BY questionId DESC LIMIT 5;";
 		$result = mysqli_query($db, $sql);
 		$rows = mysqli_num_rows($result);
 
@@ -59,11 +59,12 @@
 		for ($i = 0; $i <= $rows - 1; $i++) {
 			$fetch = mysqli_fetch_array($result);
 
+			$questionId = $fetch["questionId"];
 			$questionText = $fetch["questionText"];
 			$questionCategory = $fetch["categoryType"];
 			$questionAnswer = $fetch["questionAnswer"];
 			$answerUser = $fetch["answerUser"];
-			print "<tr><td id='myTd' class='myTd' onclick='tdclick();'>$questionText | $questionCategory | $questionAnswer | $answerUser</td></tr>";
+			print "<tr><td id='myTd$questionId' class='myTd' onclick='tdclick($questionId)'> $questionText | $questionCategory | $questionAnswer | $answerUser</td></tr>";
 		}
 
 		print "</table>";
