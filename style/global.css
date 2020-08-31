@@ -299,3 +299,16 @@ li.footerDesc2 h5{
        padding-top: 1vh;
        color: black;
     }
+
+    .myTd {
+        width: 48vw;
+        padding: 2vh;
+        border: 2px solid var(--nomad-orange);
+        font-size: 2.5vh;
+
+    }
+
+    .lastQuestionsTable {
+        margin: auto;
+        padding-top: 2vh;
+    }

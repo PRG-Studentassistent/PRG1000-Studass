@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="style/global.css">
 	<base href="/">
 	<title>PRG1000 | Studentassistent</title>
+	<script src="./functions/table.js"></script>
 </head>
 <body>
 <header class="headerMain">
@@ -53,7 +54,7 @@
 		$result = mysqli_query($db, $sql);
 		$rows = mysqli_num_rows($result);
 
-		print "<table>";
+		print "<table class='lastQuestionsTable'>";
 
 		for ($i = 0; $i <= $rows - 1; $i++) {
 			$fetch = mysqli_fetch_array($result);
@@ -62,7 +63,7 @@
 			$questionCategory = $fetch["categoryType"];
 			$questionAnswer = $fetch["questionAnswer"];
 			$answerUser = $fetch["answerUser"];
-			print "<tr><td>$questionText | $questionCategory | $questionAnswer | $answerUser</td></tr> <br><br>";
+			print "<tr><td id='myTd' class='myTd' onclick='tdclick();'>$questionText | $questionCategory | $questionAnswer | $answerUser</td></tr>";
 		}
 
 		print "</table>";
