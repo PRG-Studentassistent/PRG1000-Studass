@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="style/global.css">
 	<base href="/">
 	<title>PRG1000 | Studentassistent</title>
-	<script src="./functions/table.js"></script>
+	<script src="functions/table.js"></script>
 </head>
 <body>
 <header class="headerMain">
