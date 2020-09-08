@@ -29,12 +29,14 @@
 				</div>
 			</li>
 			<li>
-				<div class="dropdown">
-					<button class="dropbtn"><h3 class="alt">Kapitler</h3></button>
-					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
+				<div class="navItem">
+					<div class="dropdown">
+						<button class="dropbtn"><h3 class="alt">Kapitler</h3></button>
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
 					</div>
 				</div>
 			</li>
@@ -64,7 +66,7 @@
 			$questionCategory = $fetch["categoryType"];
 			$questionAnswer = $fetch["questionAnswer"];
 			$answerUser = $fetch["answerUser"];
-			print "<tr><td id='myTd$questionId' class='myTd' onclick='tdclick($questionId)'> $questionText | $questionCategory | $questionAnswer | $answerUser</td></tr>
+			print "<tr><td id='myTd$questionId' class='myTd myTdQuestions' onclick='questionClick($questionId)'> $questionText | $questionCategory | $questionAnswer | $answerUser</td></tr>
 					<tr><td id='hiddenTd$questionId' class='hiddenTd' style='display: none ;'>Svar: $questionAnswer</td></tr>";
 		}
 
@@ -72,7 +74,27 @@
 		?>
 	</div>
 	<div class="newestPost">
-		<p>5 siste oppdatering fra temaer kommer her</p>
+		<?php
+		include("./access/database.php");
+
+		$sql = "SELECT postId, postText, c.categoryType, postUser FROM prg1000.posts JOIN category c on posts.postCategory = c.cateqoryId ORDER BY postId DESC LIMIT 5;";
+		$result = mysqli_query($db, $sql);
+		$rows = mysqli_num_rows($result);
+
+		print "<table class='newestPostTable'>";
+
+		for ($i = 0; $i <= $rows - 1; $i++) {
+			$fetch = mysqli_fetch_array($result);
+
+			$postId = $fetch["postId"];
+			$postText = $fetch["postText"];
+			$postUser = $fetch["postUser"];
+			$postCategory = $fetch["categoryType"];
+			print "<tr><td id='myTd' class='myTd'> $postText | $postCategory | $postUser</td></tr>
+		";
+		}
+		print "</table>";
+		?>
 	</div>
 </div>
 

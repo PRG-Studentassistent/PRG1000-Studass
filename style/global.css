@@ -24,16 +24,17 @@ header {
     max-height: 10vh;
     background-color: var(--regent-blue);
 }
-.branding{
-  float:left;
+
+.branding {
+    float: left;
 }
+
 .dropbtn {
     background-color: var(--orange-tan);
     color: var(--catskill-white);
     padding: 0;
-    padding-top: 0.5vh;
     /* padding-bottom: 1vh; */
-    font-size: 2empx;
+    font-size: 2 empx;
     border: 1px solid var(--nomad-orange);
     border: none;
     height: 10vh;
@@ -48,17 +49,20 @@ header {
     width: 52vw;
     background-color: var(--orange-tan);
 }
-ul{
+
+ul {
     width: 50vw;
     margin: 0;
 }
-li{
+
+li {
     width: 12vw;
     height: 4vh;
     margin: 0px;
     position: relative;
 }
-h3.alt{
+
+h3.alt {
     margin: 0;
     padding: 0;
     font-size: 1em;
@@ -66,6 +70,7 @@ h3.alt{
     padding-top: 2.5vh;
     height: 7.5vh;
 }
+
 .navItem {
     background-color: var(--orange-tan);
     width: 12vw;
@@ -92,10 +97,12 @@ a:-webkit-any-link {
 }
 
 .dropdown {
+    background-color: var(--orange-tan);
+    width: 12vw;
+    height: 10vh;
     position: relative;
     display: inline-block;
     margin: 0;
-    background-color: var (--orange-tan);
 }
 
 .dropdown-content {
@@ -118,10 +125,17 @@ a:-webkit-any-link {
     background-color: var(--catskill-white);
 }
 
+.dropdown:hover {
+    background-color: var(--gothic-blue);
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+.alt:hover {
+    background-color: var(--gothic-blue);
+}
 
 
 li {
@@ -149,59 +163,70 @@ li a {
 
 /*Body*/
 
-.welcomeMsg { grid-area: welcome; }
-.lastQuestions { grid-area: questions; }
-.newestPost { grid-area: posts; }
+.welcomeMsg {
+    grid-area: welcome;
+}
+
+.lastQuestions {
+    grid-area: questions;
+}
+
+.newestPost {
+    grid-area: posts;
+}
 
 
 .grid-container {
-  display: grid;
-  background-color: #f5fafa;
-  grid-template-areas:
-   ' welcome welcome welcome welcome welcome welcome'
-    ' questions questions questions posts posts posts'
-    'questions questions questions posts posts posts';
-  grid-gap: 1vw;
-  background-color:white;
-  padding: 0.5vw;
+    display: grid;
+    background-color: #f5fafa;
+    grid-template-areas: ' welcome welcome welcome welcome welcome welcome' ' questions questions questions posts posts posts' 'questions questions questions posts posts posts';
+    grid-gap: 1vw;
+    background-color: white;
+    padding: 0.5vw;
 }
+
 .grid-container > div {
     background-color: #d4e6e3;
     text-align: center;
-  }
-  .welcomeMsg{
+}
+
+.welcomeMsg {
     width: 99vw;
     height: 25vh;
-  }
-  .welcomeMsg p{
+}
+
+.welcomeMsg p {
     font-size: 2em;
     margin: 0;
     margin-top: 1vh;
-  }
+}
 
-  .lastQuestions{
-      width: 49vw;
-      height: 50vh;
-      overflow-y: auto;
-      overflow: scroll;
-      overflow-x: hidden;
-  }
-  .newestPost{
-      width: 49vw;
-      height: 50vh;
-      overflow-y: auto;
-      overflow: scroll;
-      overflow-x: hidden;
-  }
-ul.firstfooter{
+.lastQuestions {
+    width: 49vw;
+    height: 50vh;
+    overflow-y: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.newestPost {
+    width: 49vw;
+    height: 50vh;
+    overflow-y: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+ul.firstfooter {
     width: 100vw;
     height: 10vh;
     padding: 0;
     margin: 0;
     display: inline-block;
-    white-space: nowrap;    
+    white-space: nowrap;
 }
-li.footerDesc{
+
+li.footerDesc {
     width: 50vw;
     height: 10vh;
     margin: 0;
@@ -210,10 +235,12 @@ li.footerDesc{
     display: inline-block;
     white-space: nowrap;
 }
-li.footerDesc h5{
-text-align: center;
+
+li.footerDesc h5 {
+    text-align: center;
 }
-li.footerDesc2{
+
+li.footerDesc2 {
     width: 50vw;
     height: 10vh;
     margin: 0;
@@ -222,107 +249,121 @@ li.footerDesc2{
     display: inline-block;
     white-space: nowrap;
 }
-li.footerDesc2 h5{
+
+li.footerDesc2 h5 {
     text-align: center;
-    }
+}
 
-    figure.footerFigure{
-        margin: 0;
-        width: 100vw;
-        min-height: 40vh;
-     }
-     section.footerSectionOne{
-         width: 40vw;
-         margin-left: 5vw;
-         float: left;
-         /*
-         border-left-style: solid;
-         border-right-style: solid;
-         border-left-width: 0.1vw;
-         border-right-width: 0.1vw;*/
-     }
-     h3.desc{
-         font-size: 1.5em;
-         text-align: center;
-         border-bottom-style: solid;
-         border-bottom-width: 0.1vw;
-         margin: 0;
-         padding: 0;
-         margin-top: 1vh;
-     }
-     ul.footerNavOne{
-         margin: 0;
-         padding: 0;
-         list-style: none;
-         display: block;
-         white-space: break-spaces;
-     }
-    ul.footerNavOne li{
-        border-bottom-style: solid;
-        margin: 0;
-        text-align: center;
-        height: 4vh;
-        display: block;
-        white-space: break-spaces;
-        width: 40vw;
-    }
-    ul.footerNavOne li h3{
-        margin: 0;
-        height: 3vh;
-        padding-top: 1vh;
-        color: black;
-        display: block;
-        white-space: break-spaces;
-    }
-    
-     section.footerSectionTwo{
-        width: 40vw;
-        margin-right: 5vw; 
-        float:right;
-     }
-    ul.footerNavTwo{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    ul.footerNavTwo li{
-       border-bottom-style: solid;
-       margin: 0;
-       text-align: center;
-       height: 4vh;
-       width: 40vw;
-       display: block;
-       white-space: break-spaces;
-    }
-    ul.footerNavTwo li h3{
-       margin: 0;
-       height: 3vh;
-       padding-top: 1vh;
-       color: black;
-    }
+figure.footerFigure {
+    margin: 0;
+    width: 100vw;
+    min-height: 40vh;
+}
 
-    .myTd {
-        width: 44vw;
-        padding: 2vh;
-        font-size: 2.5vh;
-        background-color: var(--orange-tan);
+section.footerSectionOne {
+    width: 40vw;
+    margin-left: 5vw;
+    float: left;
+    /*
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-width: 0.1vw;
+    border-right-width: 0.1vw;*/
+}
 
-    }
+h3.desc {
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1vw;
+    margin: 0;
+    padding: 0;
+    margin-top: 1vh;
+}
 
-    .myTd:hover {
-        color: var(--gothic-blue);
+ul.footerNavOne {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    white-space: break-spaces;
+}
 
-    }
+ul.footerNavOne li {
+    border-bottom-style: solid;
+    margin: 0;
+    text-align: center;
+    height: 4vh;
+    display: block;
+    white-space: break-spaces;
+    width: 40vw;
+}
 
-    .hiddenTd {
-        width: 44vw;
-        font-size: 2.5vh;
-        background-color: var(--15dark-regent-blue);
-        margin-bottom: 1.5vh;
+ul.footerNavOne li h3 {
+    margin: 0;
+    height: 3vh;
+    padding-top: 1vh;
+    color: black;
+    display: block;
+    white-space: break-spaces;
+}
 
-    }
+section.footerSectionTwo {
+    width: 40vw;
+    margin-right: 5vw;
+    float: right;
+}
 
-    .lastQuestionsTable {
-        margin: auto;
-        padding-top: 2vh;
-    }
+ul.footerNavTwo {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.footerNavTwo li {
+    border-bottom-style: solid;
+    margin: 0;
+    text-align: center;
+    height: 4vh;
+    width: 40vw;
+    display: block;
+    white-space: break-spaces;
+}
+
+ul.footerNavTwo li h3 {
+    margin: 0;
+    height: 3vh;
+    padding-top: 1vh;
+    color: black;
+}
+
+.myTd {
+    width: 44vw;
+    padding: 2vh;
+    font-size: 2.5vh;
+    background-color: var(--orange-tan);
+
+}
+
+.myTdQuestions:hover {
+    color: var(--gothic-blue);
+
+}
+
+.hiddenTd {
+    width: 44vw;
+    font-size: 2.5vh;
+    background-color: var(--15dark-regent-blue);
+    margin-bottom: 1vh;
+
+}
+
+.lastQuestionsTable {
+    margin: auto;
+    padding-top: 2vh;
+}
+
+.newestPostTable {
+    margin: auto;
+    padding-top: 2vh;
+}
