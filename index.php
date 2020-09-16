@@ -47,6 +47,36 @@
 <div class="grid-container">
 	<div class="welcomeMsg">
 		<p>Velkommen melding og introduksjons til siden her!</p>
+		<!-- Kansje Legge inn FAQ spørsmål her? -->
+		<form class="questionForm" method="post" id="questionForm" name="questionForm" action="index.php"
+			  enctype="multipart/form-data">
+
+			<label for="question">Spørsmål</label> <br>
+			<input type="text" value="" name="question" id="question" onfocus="" placeholder="Ditt spørsmål"> <br>
+			<input type="submit" value="submit" name="submit" id="submit" class="submitButton">
+
+		</form>
+
+		<?php
+		if (isset($_POST["submit"])) {
+
+			$insertQuestion = $_POST["question"];
+			$insertCategory = $_POST["tema"];
+
+			include("./access/database.php");
+
+			$insertSql = "INSERT INTO questions (questionText) VALUES ('$insertQuestion');";
+
+			if (mysqli_query($db, $insertSql)) {
+				header("Location:index.php");
+				exit;
+			} else {
+				print ("<p>The query failed</p>");
+			}
+			mysqli_close($db);
+		}
+		?>
+
 	</div>
 	<div class="lastQuestions">
 		<?php
@@ -104,27 +134,28 @@
 </ul>
 <figure class="footerFigure">
 
-<section class="footerSectionOne">
+	<section class="footerSectionOne">
 
-<ul class="footerNavOne">
-<li><a href="https://usn.no"><h3 class="footerNav">USN</h3></a></li>
-<li><a href="https://www.usn.no/om-usn/it-tjenester/canvas/"><h3 class="footerNav">Canvas</h3></a></li>
-<li><a href="https://www.usn.no/om-usn/kvalitetssystemet/si-ifra/"><h3 class="footerNav">Si i fra</h3></a></li>
-<li><a href="https://www.usn.no/aktuelt/"><h3 class="footerNav">Aktuelle nyheter</h3></a></li>
-<li><a href="https://www.usn.no/om-usn/it-tjenester/"><h3 class="footerNav">IT hjelp</h3></a></li>
-</ul>
-</section>
+		<ul class="footerNavOne">
+			<li><a href="https://usn.no"><h3 class="footerNav">USN</h3></a></li>
+			<li><a href="https://www.usn.no/om-usn/it-tjenester/canvas/"><h3 class="footerNav">Canvas</h3></a></li>
+			<li><a href="https://www.usn.no/om-usn/kvalitetssystemet/si-ifra/"><h3 class="footerNav">Si i fra</h3></a>
+			</li>
+			<li><a href="https://www.usn.no/aktuelt/"><h3 class="footerNav">Aktuelle nyheter</h3></a></li>
+			<li><a href="https://www.usn.no/om-usn/it-tjenester/"><h3 class="footerNav">IT hjelp</h3></a></li>
+		</ul>
+	</section>
 
-<section class="footerSectionTwo">
+	<section class="footerSectionTwo">
 
-<ul class="footerNavTwo">
-<li><a href="om.php"><h3 class="footerNav">Om oss</h3></a></li>
-<li><a href="hjelp.php"><h3 class="footerNav">Hjelp</h3></a></li>
-<li><a href="nyheter.php"><h3 class="footerNav">Endringslogg</h3></a></li>
-<li><a href="tilbakemelding.php"><h3 class="footerNav">tilbakemelding</h3></a></li>
-<li><a href="soking.php"><h3 class="footerNav">Hvordan søker jeg?</h3></a></li>
-</ul>
-</section>
+		<ul class="footerNavTwo">
+			<li><a href="om.php"><h3 class="footerNav">Om oss</h3></a></li>
+			<li><a href="hjelp.php"><h3 class="footerNav">Hjelp</h3></a></li>
+			<li><a href="nyheter.php"><h3 class="footerNav">Endringslogg</h3></a></li>
+			<li><a href="tilbakemelding.php"><h3 class="footerNav">tilbakemelding</h3></a></li>
+			<li><a href="soking.php"><h3 class="footerNav">Hvordan søker jeg?</h3></a></li>
+		</ul>
+	</section>
 
 </figure>
 
